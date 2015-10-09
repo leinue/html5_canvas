@@ -37,7 +37,15 @@
 
 		context.strokeText('hello canvas',canvas.width/2-150,canvas.height/2+15);
 
+		function drawGrid(strokeStyle,fillStyle) {
 
+			controlContext.save();
+			controlContext.fillStyle = fillStyle;
+			controlContext.strokeStyle = strokeStyle;
+
+			controlContext.restore();
+
+		}
 
 	</script>
 
